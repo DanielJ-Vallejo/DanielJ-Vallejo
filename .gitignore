@@ -1,7 +1,3 @@
-# Datos
-/data/raw/
-/data/processed/
-
 # Entornos y caches
 *.env
 __pycache__/
