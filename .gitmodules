@@ -1,0 +1,3 @@
+[submodule "Documentación/fraud-detection-handbook"]
+	path = Documentación/fraud-detection-handbook
+	url = https://github.com/usuario/fraud-detection-handbook.git
