@@ -1,0 +1,12 @@
+# Datos
+/data/raw/
+/data/processed/
+
+# Entornos y caches
+*.env
+__pycache__/
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.DS_Store
