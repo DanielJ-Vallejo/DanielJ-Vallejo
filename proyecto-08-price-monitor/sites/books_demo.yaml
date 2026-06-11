@@ -1,0 +1,10 @@
+# Demo site config: books.toscrape.com is a sandbox built specifically for
+# practicing web scraping — safe and legal for demos and CI.
+# Adapting the monitor to another store = writing a file like this one.
+
+name: "books-demo"
+url: "https://books.toscrape.com/catalogue/category/books/science_22/index.html"
+item_selector: "article.product_pod"
+title_selector: "h3 a"
+title_attr: "title"
+price_selector: "p.price_color"

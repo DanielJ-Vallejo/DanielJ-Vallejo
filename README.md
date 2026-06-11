@@ -29,6 +29,9 @@ reproducible results.*
 | 🚢 [Titanic sin fuga de datos](proyecto-03-titanic/) | El clásico, con preprocesamiento dentro de pipelines CV / *The classic, preprocessing inside CV pipelines* | scikit-learn | ROC-AUC **0.876** (CV) consistente con holdout |
 | ⚛️ [Simulaciones de física estadística](proyecto-04-simulaciones/) | Ising 2D/3D, Langevin, caminatas aleatorias con errores jackknife / *Ising 2D/3D, Langevin, random walks with jackknife errors* | NumPy, Monte Carlo | Tc de Onsager y Var=2Dt reproducidos |
 | 🤟 [Visión: vocales de LSM](proyecto-05-lsm-vision/) | YOLO few-shot para Lengua de Señas Mexicana, 9 entrenamientos / *Few-shot YOLO for Mexican Sign Language, 9 trainings* | YOLO v5/v8/v11 | mAP@0.5 **0.853** con 300 imágenes |
+| 🤖 [Agente de Telegram](proyecto-06-telegram-agent/) | Bot de citas y FAQ para negocios, costo $0, cliente nuevo = un YAML / *Booking & FAQ bot for businesses, $0 cost, new client = one YAML* | Telegram Bot API, SQLite | 11 tests · LLM local opcional |
+| 🧾 [Extractor de facturas CFDI](proyecto-07-facturas-cfdi/) | Facturas mexicanas XML → Excel con app web de arrastrar y soltar / *Mexican e-invoices XML → Excel with drag-and-drop web app* | Streamlit, stdlib XML | CFDI 3.3 y 4.0 · OCR opcional |
+| 📉 [Monitor de precios](proyecto-08-price-monitor/) | Scraping configurable por YAML + historial + alertas Telegram + dashboard / *YAML-configurable scraping + history + Telegram alerts + dashboard* | BeautifulSoup, Plotly | Sitio nuevo = 8 líneas de YAML |
 
 ## 🛠️ Tecnologías / Tech
 

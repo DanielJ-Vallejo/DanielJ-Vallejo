@@ -1,0 +1,33 @@
+# Perfil de negocio de ejemplo — copia a config.yaml y edita.
+# Example business profile — copy to config.yaml and edit.
+
+name: "Estética Luna"
+description: "Salón de belleza en CDMX. Cortes, color y manicure."
+
+services:
+  - "Corte de cabello"
+  - "Tinte / color"
+  - "Manicure"
+
+opening_hour: 10      # abre 10:00
+closing_hour: 19      # cierra 19:00
+slot_minutes: 60      # citas de 1 hora
+days_open: [0, 1, 2, 3, 4, 5]   # lunes a sábado (0=lunes)
+
+# Chat de Telegram del dueño para recibir avisos de citas y preguntas
+# sin responder (obtén tu id con @userinfobot). Déjalo vacío para desactivar.
+owner_chat_id:
+
+faq:
+  - question: "¿Cuánto cuesta el corte de cabello?"
+    answer: "El corte de dama cuesta $250 y el de caballero $150 💇"
+    keywords: ["precio", "costo", "cuanto", "corte"]
+  - question: "¿Dónde están ubicados?"
+    answer: "Estamos en Av. Universidad 123, Coyoacán, CDMX 📍"
+    keywords: ["ubicacion", "direccion", "donde", "llegar"]
+  - question: "¿Qué métodos de pago aceptan?"
+    answer: "Aceptamos efectivo, tarjeta y transferencia 💳"
+    keywords: ["pago", "tarjeta", "efectivo", "transferencia"]
+  - question: "¿Atienden sin cita?"
+    answer: "Sí, pero con cita tienes tu lugar asegurado. Agéndala con /agendar 😉"
+    keywords: ["cita", "sin cita", "walk in"]

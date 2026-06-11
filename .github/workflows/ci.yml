@@ -17,6 +17,9 @@ jobs:
           - proyecto-02-sentiment-analysis
           - proyecto-03-titanic
           - proyecto-04-simulaciones
+          - proyecto-06-telegram-agent
+          - proyecto-07-facturas-cfdi
+          - proyecto-08-price-monitor
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -25,7 +28,9 @@ jobs:
           cache: pip
       - name: Install core dependencies
         # Heavy training deps (torch/transformers) are not needed for tests
-        run: pip install numpy pandas scikit-learn matplotlib joblib openpyxl pytest
+        run: >
+          pip install numpy pandas scikit-learn matplotlib joblib openpyxl
+          pytest python-telegram-bot PyYAML beautifulsoup4 requests
       - name: Run tests
         run: pytest ${{ matrix.project }}/tests -q
 

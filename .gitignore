@@ -21,3 +21,7 @@ data/raw/sentiment-analysis/*.xlsx
 # Artefactos de entrenamiento pesados / heavy training artifacts
 proyecto-*/models/*.joblib
 proyecto-*/results/
+
+# Bases de datos de runtime / runtime databases & client configs
+proyecto-*/*.sqlite3
+proyecto-06-telegram-agent/config.yaml

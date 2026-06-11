@@ -1,0 +1,8 @@
+pandas>=2.2
+openpyxl>=3.1
+streamlit>=1.35
+pytest>=8.0
+
+# Optional OCR for scanned invoices (also needs the free Tesseract binary):
+# pytesseract>=0.3
+# pillow>=10.0

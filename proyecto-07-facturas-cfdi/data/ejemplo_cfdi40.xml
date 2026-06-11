@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Factura SINTÉTICA de ejemplo (datos ficticios) para demo y tests -->
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    Version="4.0" Fecha="2026-05-15T10:30:00" SubTotal="1000.00"
+    Total="1160.00" Moneda="MXN" TipoDeComprobante="I"
+    LugarExpedicion="04510">
+  <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE"
+      RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL"
+      DomicilioFiscalReceptor="04510" RegimenFiscalReceptor="616"
+      UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="81111504" Cantidad="1"
+        ClaveUnidad="E48" Descripcion="Servicio de consultoria"
+        ValorUnitario="1000.00" Importe="1000.00" ObjetoImp="02"/>
+  </cfdi:Conceptos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital
+        xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"
+        Version="1.1" UUID="AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE"
+        FechaTimbrado="2026-05-15T10:31:00" RfcProvCertif="SAT970701NN3"
+        SelloCFD="demo" NoCertificadoSAT="00001000000000000000"
+        SelloSAT="demo"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

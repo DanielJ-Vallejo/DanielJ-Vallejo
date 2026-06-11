@@ -43,6 +43,22 @@ const I18N = {
       "The classic benchmark with engineering discipline: preprocessing inside cross-" +
       "validated pipelines, domain features and honest evaluation. CV ROC-AUC 0.876, " +
       "consistent with holdout.",
+    tag_auto: "Automation",
+    p6_title: "Telegram Booking Agent",
+    p6_desc:
+      "Production-ready bot that books appointments and answers customers 24/7 at zero " +
+      "cost: free Bot API, SQLite and fuzzy matching. New client = one YAML file, no " +
+      "code changes. Optional local LLM via Ollama.",
+    p7_title: "CFDI Invoice Extractor",
+    p7_desc:
+      "Mexican e-invoices (CFDI 3.3/4.0) to Excel in seconds: exact XML parsing, " +
+      "drag-and-drop web app and optional OCR for scanned invoices. Fully local — " +
+      "fiscal data never leaves your machine.",
+    p8_title: "Price Monitor with Alerts",
+    p8_desc:
+      "Productized scraping: one YAML describes any store, the monitor stores history " +
+      "in SQLite, detects drops and sends free Telegram alerts. Interactive Plotly " +
+      "dashboard with CSV export.",
     view_code: "View code →",
     sk_lang: "Languages",
     sk_tools: "Tools",
@@ -99,6 +115,22 @@ const I18N = {
       "El benchmark clásico con disciplina de ingeniería: preprocesamiento dentro de " +
       "pipelines con validación cruzada, features de dominio y evaluación honesta. " +
       "ROC-AUC 0.876 (CV) consistente con holdout.",
+    tag_auto: "Automatización",
+    p6_title: "Agente de Citas por Telegram",
+    p6_desc:
+      "Bot listo para producción que agenda citas y responde clientes 24/7 con costo " +
+      "cero: Bot API gratuita, SQLite y matching difuso. Cliente nuevo = un archivo " +
+      "YAML, sin tocar código. LLM local opcional vía Ollama.",
+    p7_title: "Extractor de Facturas CFDI",
+    p7_desc:
+      "Facturas electrónicas mexicanas (CFDI 3.3/4.0) a Excel en segundos: parsing " +
+      "exacto del XML, app web de arrastrar y soltar, y OCR opcional para facturas " +
+      "escaneadas. Todo local — los datos fiscales no salen de tu máquina.",
+    p8_title: "Monitor de Precios con Alertas",
+    p8_desc:
+      "Scraping productizado: un YAML describe cualquier tienda, el monitor guarda " +
+      "historial en SQLite, detecta bajadas y avisa gratis por Telegram. Dashboard " +
+      "interactivo con Plotly y export a CSV.",
     view_code: "Ver código →",
     sk_lang: "Lenguajes",
     sk_tools: "Herramientas",
