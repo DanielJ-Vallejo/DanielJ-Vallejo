@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main, portfolio-restructure]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - proyecto-01-fraud-detection
+          - proyecto-02-sentiment-analysis
+          - proyecto-03-titanic
+          - proyecto-04-simulaciones
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install core dependencies
+        # Heavy training deps (torch/transformers) are not needed for tests
+        run: pip install numpy pandas scikit-learn matplotlib joblib openpyxl pytest
+      - name: Run tests
+        run: pytest ${{ matrix.project }}/tests -q
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      - name: Ruff (style + common bugs)
+        run: ruff check proyecto-*/src proyecto-*/scripts shared
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install audit tools
+        run: pip install pip-audit bandit
+      - name: Audit declared dependencies
+        run: |
+          for req in proyecto-*/requirements.txt; do
+            echo "== $req =="
+            pip-audit -r "$req" --skip-editable || exit 1
+          done
+      - name: Bandit static security scan
+        run: bandit -r proyecto-*/src shared -ll

@@ -1,0 +1,34 @@
+{
+  "n_passengers": 891,
+  "survival_rate": 0.3838,
+  "cross_validation": [
+    {
+      "model": "logistic_regression",
+      "cv_accuracy": 0.8189,
+      "cv_accuracy_std": 0.0243,
+      "cv_roc_auc": 0.8659,
+      "cv_f1": 0.7607
+    },
+    {
+      "model": "random_forest",
+      "cv_accuracy": 0.8231,
+      "cv_accuracy_std": 0.0297,
+      "cv_roc_auc": 0.8711,
+      "cv_f1": 0.7496
+    },
+    {
+      "model": "gradient_boosting",
+      "cv_accuracy": 0.8217,
+      "cv_accuracy_std": 0.0353,
+      "cv_roc_auc": 0.876,
+      "cv_f1": 0.7551
+    }
+  ],
+  "best_model": "gradient_boosting",
+  "holdout": {
+    "model": "gradient_boosting",
+    "accuracy": 0.8045,
+    "roc_auc": 0.8385,
+    "f1": 0.7328
+  }
+}

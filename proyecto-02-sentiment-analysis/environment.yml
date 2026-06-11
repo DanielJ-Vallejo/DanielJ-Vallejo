@@ -1,0 +1,17 @@
+name: sentiment-analysis
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - pandas>=2.2
+  - scikit-learn>=1.4
+  - openpyxl>=3.1
+  - pytest>=8.0
+  - pip
+  - pip:
+      - torch>=2.2
+      - transformers>=4.40
+      - datasets>=2.19
+      - accelerate>=0.29
+      - sentencepiece>=0.2

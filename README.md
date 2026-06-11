@@ -1,59 +1,59 @@
-<!--
-**DanielJ-Vallejo/DanielJ-Vallejo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+# Hi! Soy Daniel Jiménez Vallejo 👋
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Data Science · Machine Learning · Scientific Computing**
 
-## Hi! Soy Daniel Jiménez Vallejo 👋
+Físico en formación (UNAM) construyendo sistemas de ML de extremo a extremo
+/ *Physicist in training (UNAM) building end-to-end ML systems*
 
-## 🔭 Sobre mí
-Soy estudiante de octavo semestre de Física en la UNAM. Me apasionan la **inteligencia artificial** (ML/DL), el **cómputo científico** y el **estudio del cerebro humano**
+[🌐 Portfolio Web](https://danielj-vallejo.github.io/DanielJ-Vallejo/) ·
+[💼 LinkedIn](https://www.linkedin.com/in/daniel-jiménez-vallejo) ·
+[✉️ daniel20615@gmail.com](mailto:daniel20615@gmail.com)
 
-## 🌱 En este momento estoy…
-En esta etapa de mi vida me siento profundamente conectado con mi entorno y con el universo. Lo que antes me parecía lejano hoy se vuelve realidad gracias a la investigación y al aprendizaje continuo. He explorado la toma de decisiones desde la perspectiva de la cognición cuántica y he descubierto que apenas he rozado la superficie de este fascinante campo. Sé que aún tengo mucho por aprender e investigar.He completado el programa de macroentrenamiento en IA de la UNAM y ahora repaso sus contenidos mientras afino mi dominio de GitHub para optimizar la colaboración en mis proyectos.
+</div>
 
-## 👯 Buscando colaborar en
-- Proyectos open-source de ML/DL en Python.
-- Iniciativas de ciencia de datos en física computacional.
-
-## 💬 Pregúntame sobre
-- **Física**
-- **Python**   
-- **Machine Learning & Deep Learning**  
-- **Simulaciones numéricas**  
-- **Introducción a la computación cuántica**
-
-## 🛠️ Tecnologías y Herramientas
-- **Lenguajes**: Python, SQL básico, C++ básico  
-- **Frameworks**: PyTorch, TensorFlow, scikit-learn  
-- **Herramientas**: Git básico Jupyter Notebook, Colab, LaTeX  
-
-<!--
-## 📂 Proyectos Destacados
-| Proyecto                              | Descripción breve                               | Link                                   |
-|---------------------------------------|-----------------------------------------------|----------------------------------------|
-| 📊 `sentiment-analysis-spanish`       | Clasificador de sentimientos en español con BERT. | [repo](https://github.com/…)           |
-| 🖥️ `sim-resorte-amortiguado`          | Simulación ODE de un sistema masa-resorte amortiguado forzado. | [repo](https://github.com/…)           |
-| 🔬 `quantum-cognition-ppt`            | Presentación académica sobre toma de decisiones cuánticas. | [repo](https://github.com/…)           |
--->
-
-## 🎓 Formación Académica
-- Licenciatura en Física, UNAM (2017–presente)  
-- Cursos relevantes: Preprocesamiento de datos con python, introduccion a la inteligencia artificial, introduccion al aprendizaje por refuerzo, mecanica cuantica 
-
-
-## 📫 Contáctame
-- ✉️ Email: daniel20615.1@gmail.com  
-- 🔗 LinkedIn: [in/DanielJimenezVallejo](www.linkedin.com/in/daniel-jiménez-vallejo)  
 ---
 
-“We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.” – Carl Sagan
+## 📂 Proyectos / Projects
+
+Este repositorio es mi **portafolio de ciencia de datos**: proyectos autocontenidos con
+paquete `src/`, tests, CI y resultados reproducibles. / *This repository is my data
+science portfolio: self-contained projects with `src/` packages, tests, CI and
+reproducible results.*
+
+| Proyecto | Descripción / Description | Stack | Resultado clave |
+|---|---|---|---|
+| 💳 [Detección de fraude](proyecto-01-fraud-detection/) | Simulador de transacciones + features con retraso de etiquetas + validación temporal + Card Precision@k / *Transaction simulator, label-delay features, temporal validation, operational metrics* | scikit-learn, pandas | ROC-AUC **0.90** · AP **0.61** (217k tx, 1% fraude) |
+| 🗣️ [Sentimientos en español — MeIA 2025](proyecto-02-sentiment-analysis/) | Fine-tuning de BETO para polaridad 1–5 de reseñas turísticas / *BETO fine-tuning for 5-class review polarity* | PyTorch, 🤗 Transformers | Score **0.5889** en leaderboard del reto |
+| 🚢 [Titanic sin fuga de datos](proyecto-03-titanic/) | El clásico, con preprocesamiento dentro de pipelines CV / *The classic, preprocessing inside CV pipelines* | scikit-learn | ROC-AUC **0.876** (CV) consistente con holdout |
+| ⚛️ [Simulaciones de física estadística](proyecto-04-simulaciones/) | Ising 2D/3D, Langevin, caminatas aleatorias con errores jackknife / *Ising 2D/3D, Langevin, random walks with jackknife errors* | NumPy, Monte Carlo | Tc de Onsager y Var=2Dt reproducidos |
+| 🤟 [Visión: vocales de LSM](proyecto-05-lsm-vision/) | YOLO few-shot para Lengua de Señas Mexicana, 9 entrenamientos / *Few-shot YOLO for Mexican Sign Language, 9 trainings* | YOLO v5/v8/v11 | mAP@0.5 **0.853** con 300 imágenes |
+
+## 🛠️ Tecnologías / Tech
+
+**Lenguajes:** Python · SQL · C++ (básico) · LaTeX
+**ML/Data:** scikit-learn · PyTorch · TensorFlow · 🤗 Transformers · pandas · NumPy
+**Ingeniería:** Git/GitHub · pytest · GitHub Actions (CI/CD) · Jupyter/Colab · Linux
+
+## 🎓 Formación / Education
+
+- **Licenciatura en Física**, Facultad de Ciencias, UNAM
+- **Macroentrenamiento en Inteligencia Artificial (MeIA 2025)** — NLP, deep learning y
+  reto de clasificación (equipo *Moodhacker4Neurona*, score 0.5889)
+- Cursos: preprocesamiento de datos, IA introductoria, aprendizaje por refuerzo,
+  visión por computadora, mecánica cuántica
+
+## 🌱 Intereses / Interests
+
+Inteligencia artificial (ML/DL) · cómputo científico · física computacional ·
+cognición cuántica · sistemas multi-agente
+
+---
+
+<div align="center">
+
+*"We live in a society exquisitely dependent on science and technology, in which hardly
+anyone knows anything about science and technology."* — Carl Sagan
+
+</div>

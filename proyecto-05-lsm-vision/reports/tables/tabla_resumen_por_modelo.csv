@@ -1,0 +1,4 @@
+modelo,Precision_media,Recall_medio,mAP50_medio,FPS_medio
+yolov11n,0.659,0.68,0.69,7.063
+yolov5n,0.622,0.684,0.676,7.463
+yolov8n,0.547,0.724,0.727,7.36

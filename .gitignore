@@ -1,8 +1,23 @@
-# Entornos y caches
+# Entornos y caches / environments & caches
 *.env
+.env.*
 __pycache__/
 .ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
 
 # IDEs
 .vscode/
+.idea/
 .DS_Store
+
+# Datos no redistribuibles (ver data/raw/*/README.md)
+# Non-redistributable datasets (see data/raw/*/README.md)
+data/raw/sentiment-analysis/*.xlsx
+
+# Artefactos de entrenamiento pesados / heavy training artifacts
+proyecto-*/models/*.joblib
+proyecto-*/results/

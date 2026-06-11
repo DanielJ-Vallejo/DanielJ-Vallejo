@@ -1,0 +1,44 @@
+{
+  "n_transactions": 216878,
+  "fraud_rate_pct": 1.065,
+  "n_train": 108173,
+  "n_test": 54304,
+  "input_features": [
+    "TX_AMOUNT",
+    "TX_DURING_WEEKEND",
+    "TX_DURING_NIGHT",
+    "CUSTOMER_ID_NB_TX_1DAY_WINDOW",
+    "CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW",
+    "CUSTOMER_ID_NB_TX_7DAY_WINDOW",
+    "CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW",
+    "CUSTOMER_ID_NB_TX_30DAY_WINDOW",
+    "CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW",
+    "TERMINAL_ID_NB_TX_1DAY_WINDOW",
+    "TERMINAL_ID_RISK_1DAY_WINDOW",
+    "TERMINAL_ID_NB_TX_7DAY_WINDOW",
+    "TERMINAL_ID_RISK_7DAY_WINDOW",
+    "TERMINAL_ID_NB_TX_30DAY_WINDOW",
+    "TERMINAL_ID_RISK_30DAY_WINDOW"
+  ],
+  "metrics": [
+    {
+      "model": "logistic_regression",
+      "roc_auc": 0.8979,
+      "average_precision": 0.4553,
+      "card_precision_top_20": 0.4417
+    },
+    {
+      "model": "random_forest",
+      "roc_auc": 0.8511,
+      "average_precision": 0.4371,
+      "card_precision_top_20": 0.39
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "roc_auc": 0.9013,
+      "average_precision": 0.6071,
+      "card_precision_top_20": 0.5167
+    }
+  ],
+  "runtime_seconds": 54.9
+}

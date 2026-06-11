@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Jiménez Vallejo — Data Science & Machine Learning</title>
+  <meta name="description" content="Portafolio de Daniel Jiménez Vallejo: ciencia de datos, machine learning y cómputo científico. Físico (UNAM)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <span class="nav__logo">DJ<span class="accent">V</span></span>
+    <div class="nav__links">
+      <a href="#proyectos" data-i18n="nav_projects">Proyectos</a>
+      <a href="#habilidades" data-i18n="nav_skills">Habilidades</a>
+      <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+      <button id="lang-toggle" class="lang-toggle" aria-label="Switch language">EN</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <p class="hero__hello mono" data-i18n="hero_hello">Hola, soy</p>
+    <h1 class="hero__name">Daniel Jiménez<span class="accent"> Vallejo</span></h1>
+    <h2 class="hero__role" data-i18n="hero_role">Ciencia de Datos · Machine Learning · Cómputo Científico</h2>
+    <p class="hero__bio" data-i18n="hero_bio">
+      Físico en formación (UNAM) que construye sistemas de machine learning de extremo a
+      extremo: de la simulación Monte Carlo a los transformers en producción. Egresado del
+      Macroentrenamiento en IA (MeIA 2025).
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="#proyectos" data-i18n="hero_cta_projects">Ver proyectos</a>
+      <a class="btn btn--ghost" href="https://github.com/DanielJ-Vallejo" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="proyectos" class="section">
+      <h2 class="section__title"><span class="mono accent">01.</span> <span data-i18n="sec_projects">Proyectos destacados</span></h2>
+      <div class="grid">
+
+        <article class="card">
+          <div class="card__head"><span class="card__icon">💳</span><span class="tag tag--featured" data-i18n="tag_featured">Destacado</span></div>
+          <h3 data-i18n="p1_title">Detección de Fraude con Tarjetas</h3>
+          <p data-i18n="p1_desc">Sistema completo: simulador de transacciones, features RFM con retraso de etiquetas, validación temporal sin fugas y métricas operativas (Card Precision@k). ROC-AUC 0.90 · AP 0.61 con ~217k transacciones y 1% de fraude.</p>
+          <p class="card__stack mono">Python · scikit-learn · pandas · pytest</p>
+          <a class="card__link" href="https://github.com/DanielJ-Vallejo/DanielJ-Vallejo/tree/main/proyecto-01-fraud-detection" target="_blank" rel="noopener noreferrer" data-i18n="view_code">Ver código →</a>
+        </article>
+
+        <article class="card">
+          <div class="card__head"><span class="card__icon">🗣️</span><span class="tag" data-i18n="tag_nlp">NLP</span></div>
+          <h3 data-i18n="p2_title">Análisis de Sentimientos en Español — MeIA 2025</h3>
+          <p data-i18n="p2_desc">Fine-tuning de BETO (BERT español) para polaridad 1–5 de reseñas turísticas: texto enriquecido con metadatos, sobremuestreo y congelamiento parcial de capas. Score 0.5889 en el leaderboard del reto.</p>
+          <p class="card__stack mono">PyTorch · 🤗 Transformers · BETO</p>
+          <a class="card__link" href="https://github.com/DanielJ-Vallejo/DanielJ-Vallejo/tree/main/proyecto-02-sentiment-analysis" target="_blank" rel="noopener noreferrer" data-i18n="view_code">Ver código →</a>
+        </article>
+
+        <article class="card">
+          <div class="card__head"><span class="card__icon">🤟</span><span class="tag" data-i18n="tag_cv">Visión</span></div>
+          <h3 data-i18n="p5_title">Detección de Vocales de LSM con YOLO</h3>
+          <p data-i18n="p5_desc">Lengua de Señas Mexicana en régimen few-shot: 9 entrenamientos (YOLOv5/v8/v11 × 100/200/300 imágenes) cuantificando el compromiso datos/desempeño. Mejor mAP@0.5: 0.853.</p>
+          <p class="card__stack mono">YOLO · OpenCV · few-shot</p>
+          <a class="card__link" href="https://github.com/DanielJ-Vallejo/DanielJ-Vallejo/tree/main/proyecto-05-lsm-vision" target="_blank" rel="noopener noreferrer" data-i18n="view_code">Ver código →</a>
+        </article>
+
+        <article class="card">
+          <div class="card__head"><span class="card__icon">⚛️</span><span class="tag" data-i18n="tag_sim">Simulación</span></div>
+          <h3 data-i18n="p4_title">Simulaciones de Física Estadística</h3>
+          <p data-i18n="p4_desc">Ising 2D/3D con Metropolis checkerboard vectorizado, dinámica de Langevin y caminatas aleatorias — validados contra resultados exactos (Tc de Onsager, Var[x]=2Dt) con errores jackknife.</p>
+          <p class="card__stack mono">NumPy · Monte Carlo · jackknife</p>
+          <a class="card__link" href="https://github.com/DanielJ-Vallejo/DanielJ-Vallejo/tree/main/proyecto-04-simulaciones" target="_blank" rel="noopener noreferrer" data-i18n="view_code">Ver código →</a>
+        </article>
+
+        <article class="card">
+          <div class="card__head"><span class="card__icon">🚢</span><span class="tag" data-i18n="tag_ml">ML clásico</span></div>
+          <h3 data-i18n="p3_title">Titanic sin Fuga de Datos</h3>
+          <p data-i18n="p3_desc">El benchmark clásico con disciplina de ingeniería: preprocesamiento dentro de pipelines con validación cruzada, features de dominio y evaluación honesta. ROC-AUC 0.876 (CV) consistente con holdout.</p>
+          <p class="card__stack mono">scikit-learn · ColumnTransformer</p>
+          <a class="card__link" href="https://github.com/DanielJ-Vallejo/DanielJ-Vallejo/tree/main/proyecto-03-titanic" target="_blank" rel="noopener noreferrer" data-i18n="view_code">Ver código →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <h2 class="section__title"><span class="mono accent">02.</span> <span data-i18n="sec_skills">Habilidades</span></h2>
+      <div class="skills">
+        <div class="skills__col">
+          <h3 data-i18n="sk_lang">Lenguajes</h3>
+          <ul class="pills">
+            <li>Python</li><li>SQL</li><li>C++ (básico)</li><li>LaTeX</li>
+          </ul>
+        </div>
+        <div class="skills__col">
+          <h3>ML / Data</h3>
+          <ul class="pills">
+            <li>scikit-learn</li><li>PyTorch</li><li>TensorFlow</li><li>🤗 Transformers</li><li>pandas</li><li>NumPy</li>
+          </ul>
+        </div>
+        <div class="skills__col">
+          <h3 data-i18n="sk_tools">Herramientas</h3>
+          <ul class="pills">
+            <li>Git / GitHub</li><li>Jupyter / Colab</li><li>pytest</li><li>GitHub Actions</li><li>Linux</li>
+          </ul>
+        </div>
+        <div class="skills__col">
+          <h3 data-i18n="sk_domains">Dominios</h3>
+          <ul class="pills">
+            <li data-i18n="dom_1">Aprendizaje supervisado</li>
+            <li>NLP</li>
+            <li data-i18n="dom_2">Visión por computadora</li>
+            <li data-i18n="dom_3">Simulación Monte Carlo</li>
+            <li data-i18n="dom_4">Datos desbalanceados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section section--center">
+      <h2 class="section__title"><span class="mono accent">03.</span> <span data-i18n="sec_contact">Contacto</span></h2>
+      <p class="contact__text" data-i18n="contact_text">
+        Estoy buscando oportunidades en ciencia de datos y machine learning.
+        Si mi perfil encaja con tu equipo, escríbeme.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="mailto:daniel20615@gmail.com">daniel20615@gmail.com</a>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/daniel-jiménez-vallejo" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="mono">© <span id="year"></span> Daniel Jiménez Vallejo — <span data-i18n="footer">Hecho con HTML/CSS/JS puro</span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
