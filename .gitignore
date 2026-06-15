@@ -27,4 +27,5 @@ proyecto-01-fraud-detection/references/fraud-detection-handbook/
 
 # Bases de datos de runtime / runtime databases & client configs
 proyecto-*/*.sqlite3
+proyecto-*/data/*.db
 proyecto-06-telegram-agent/config.yaml
