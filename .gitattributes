@@ -1,0 +1,16 @@
+# Tratar binarios como binarios → evita que core.autocrlf los corrompa con CRLF.
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.xlsx  binary
+*.xls   binary
+*.sqlite3 binary
+*.joblib binary
+*.onnx  binary
+*.pt    binary
+*.pth   binary
+*.bin   binary
+*.zip   binary
