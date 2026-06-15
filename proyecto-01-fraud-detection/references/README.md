@@ -1,22 +1,20 @@
 # References / Referencias
 
-## ⚠️ Third-party material / Material de terceros
+## 📚 Bibliographic reference / Referencia bibliográfica
 
-**EN** — The `fraud-detection-handbook/` directory contains a local copy of the open-source book
-*Reproducible Machine Learning for Credit Card Fraud Detection — Practical Handbook*
-by Yann-Aël Le Borgne, Wissam Siblini, Bertrand Lebichot and Gianluca Bontempi
-(Université Libre de Bruxelles — Machine Learning Group / Worldline Labs).
-It is kept here **only as study material and bibliographic reference** for this project.
-None of the handbook content is authored by the owner of this repository, and it retains
-its original license (see `fraud-detection-handbook/LICENSE`).
+**EN** — This project draws on the open-source book *Reproducible Machine Learning for
+Credit Card Fraud Detection — Practical Handbook* by Yann-Aël Le Borgne, Wissam Siblini,
+Bertrand Lebichot and Gianluca Bontempi (Université Libre de Bruxelles — Machine Learning
+Group / Worldline Labs). The handbook is **not vendored in this repository**; read it
+online at its official source:
+👉 https://github.com/Fraud-Detection-Handbook/fraud-detection-handbook
 
-**ES** — El directorio `fraud-detection-handbook/` contiene una copia local del libro open-source
-*Reproducible Machine Learning for Credit Card Fraud Detection — Practical Handbook*
-de Yann-Aël Le Borgne, Wissam Siblini, Bertrand Lebichot y Gianluca Bontempi
-(Université Libre de Bruxelles — Machine Learning Group / Worldline Labs).
-Se conserva aquí **únicamente como material de estudio y referencia bibliográfica** para este proyecto.
-Nada del contenido del handbook es autoría del dueño de este repositorio y conserva su licencia
-original (ver `fraud-detection-handbook/LICENSE`).
+**ES** — Este proyecto se apoya en el libro open-source *Reproducible Machine Learning for
+Credit Card Fraud Detection — Practical Handbook* de Yann-Aël Le Borgne, Wissam Siblini,
+Bertrand Lebichot y Gianluca Bontempi (Université Libre de Bruxelles — Machine Learning
+Group / Worldline Labs). El handbook **no se incluye en este repositorio**; consúltalo en
+su fuente oficial:
+👉 https://github.com/Fraud-Detection-Handbook/fraud-detection-handbook
 
 ## Citation / Cita
 

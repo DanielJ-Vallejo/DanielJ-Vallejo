@@ -22,6 +22,9 @@ data/raw/sentiment-analysis/*.xlsx
 proyecto-*/models/*.joblib
 proyecto-*/results/
 
+# Material de terceros (copia local de estudio, no se versiona) / third-party study copy
+proyecto-01-fraud-detection/references/fraud-detection-handbook/
+
 # Bases de datos de runtime / runtime databases & client configs
 proyecto-*/*.sqlite3
 proyecto-06-telegram-agent/config.yaml
