@@ -1,4 +1,5 @@
 pandas>=2.2
+matplotlib>=3.8
 streamlit>=1.35
 plotly>=5.20
 pytest>=8.0

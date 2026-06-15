@@ -1,12 +1,13 @@
 """Pruebas offline: generación de datos, consultas SQL y la recomendación."""
 
+import os
 import sqlite3
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from mundial_demanda import analisis, consultas
+from mundial_demanda import analisis, consultas, visual
 from mundial_demanda.datos import FIN, INICIO, construir_db, generar
 
 DIAS = (FIN - INICIO).days + 1
@@ -50,4 +51,11 @@ def test_recomendacion(tmp_path):
     assert rec["subida_recomendada_pct"] > 0
     assert rec["ingreso_extra_mxn"] > 0
     assert "Recomendación" in rec["texto"]
+    con.close()
+
+
+def test_visual_genera_figura(tmp_path):
+    con = _con(tmp_path)
+    ruta = visual.fig_partido_vs_normal(con, str(tmp_path / "fig.png"))
+    assert os.path.exists(ruta)
     con.close()

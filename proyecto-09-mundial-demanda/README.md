@@ -36,6 +36,9 @@ cobrando lo que la demanda permite, o están dejando dinero sobre la mesa?**
 
 La demanda casi llena los hoteles, pero el precio apenas se mueve.
 
+![Día de partido vs día normal](reports/partido_vs_normal.png)
+![Ocupación diaria por ciudad](reports/ocupacion_por_ciudad.png)
+
 ### La recomendación
 **Subir las tarifas de día de partido ~20%.** Sobre la demanda del Mundial en las sedes,
 eso son **~$5.2 M MXN adicionales — sin agregar un solo cuarto.**
