@@ -390,8 +390,8 @@ def ficha_06() -> None:
           "por no contestar a tiempo. Este bot es un <b>producto instalable</b>: el "
           "negocio define servicios, horarios y preguntas frecuentes en un YAML y "
           "queda operando el mismo día, siendo dueño de su bot sin cuotas "
-          "recurrentes obligatorias. Es también la base de servicios freelance de "
-          "automatización de atención a clientes."),
+          "recurrentes obligatorias. La misma arquitectura desacoplada permite "
+          "adaptarlo a otros canales (web, Discord) reutilizando el núcleo probado."),
     ]
     build_pdf(root / "reports" / "ficha_telegram_agent.pdf",
               "Agente de Citas y Atención por Telegram",
@@ -432,9 +432,9 @@ def ficha_07() -> None:
         p("Despachos contables que procesan cientos de facturas por cliente al mes, "
           "pymes que concilian gastos, y cualquier flujo de cuentas por pagar. El "
           "ahorro es directo: minutos de captura por factura → segundos por carpeta, "
-          "sin errores de dedo. Como servicio freelance se vende por configuración "
-          "del flujo (carpeta → Excel con el formato del cliente) y se entrega con "
-          "capacitación de 30 minutos."),
+          "sin errores de dedo. Se adapta a cada despacho definiendo el formato de "
+          "salida (carpeta → Excel con las columnas que cada flujo contable "
+          "necesita)."),
     ]
     build_pdf(root / "reports" / "ficha_facturas_cfdi.pdf",
               "Extractor de Facturas CFDI a Excel",
@@ -473,9 +473,9 @@ def ficha_08() -> None:
         h("Aplicación real"),
         p("Comercios que vigilan precios de la competencia, compradores que esperan "
           "la bajada de un producto, y analistas que construyen historial para "
-          "negociar con proveedores. Como servicio freelance: configuración inicial "
-          "por sitio + mensualidad de monitoreo — el modelo de ingreso recurrente "
-          "más simple del scraping."),
+          "negociar con proveedores. La arquitectura desacoplada (un YAML por sitio) "
+          "permite cubrir nuevos comercios sin tocar código y mantener un historial "
+          "confiable para análisis de tendencias."),
     ]
     build_pdf(root / "reports" / "ficha_price_monitor.pdf",
               "Monitor de Precios con Alertas Automáticas",
