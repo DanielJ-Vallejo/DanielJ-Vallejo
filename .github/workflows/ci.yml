@@ -22,6 +22,7 @@ jobs:
           - proyecto-08-price-monitor
           - proyecto-09-mundial-demanda
           - proyecto-10-churn-prediction
+          - proyecto-11-vision-fundamentos
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

@@ -69,6 +69,11 @@ const I18N = {
     p10_desc:
       "From SQL segments to an ML model (ROC-AUC 0.773) whose coefficients are the " +
       "churn drivers, plus a quantified retention recommendation. Interactive dashboard.",
+    p11_title: "Computer Vision: Fundamentals + Experiments",
+    p11_desc:
+      "Core CV operations from scratch in numpy (convolution, Sobel, object counting) " +
+      "plus a comparative analysis of 9 real YOLO experiments (architecture × data). " +
+      "Best: yolov11n 300img, mAP 0.891.",
     view_code: "View code →",
     sk_lang: "Languages",
     sk_tools: "Tools",
@@ -151,6 +156,11 @@ const I18N = {
     p10_desc:
       "De segmentos en SQL a un modelo de ML (ROC-AUC 0.773) cuyos coeficientes son los " +
       "drivers del abandono, y una recomendación de retención cuantificada. Dashboard interactivo.",
+    p11_title: "Visión por Computadora: Fundamentos + Experimentos",
+    p11_desc:
+      "Las operaciones base de CV desde cero en numpy (convolución, Sobel, conteo de " +
+      "objetos) + análisis comparativo de 9 experimentos YOLO reales (arquitectura × " +
+      "datos). Mejor: yolov11n 300img, mAP 0.891.",
     view_code: "Ver código →",
     sk_lang: "Lenguajes",
     sk_tools: "Herramientas",

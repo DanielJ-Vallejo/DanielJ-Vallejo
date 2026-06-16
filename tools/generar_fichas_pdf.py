@@ -553,8 +553,42 @@ def ficha_10() -> None:
               body)
 
 
+# --------------------------------------------------------------------------
+# Proyecto 11 — Visión por computadora (fundamentos + experimentos)
+# --------------------------------------------------------------------------
+def ficha_11() -> None:
+    root = REPO / "proyecto-11-vision-fundamentos"
+    body = [
+        h("Resumen"),
+        p("Proyecto de referencia en visión por computadora, en dos partes: (1) las "
+          "operaciones base de CV <b>implementadas desde cero en numpy</b> (convolución, "
+          "desenfoque gaussiano, bordes Sobel, umbralizado y conteo de objetos por "
+          "componentes conexas) y (2) el <b>análisis comparativo de 9 experimentos YOLO "
+          "reales</b> (3 arquitecturas × 3 tamaños de dataset)."),
+        h("Resultados (experimentos YOLO reales)"),
+        metrics_table(
+            ["Experimento", "mAP@0.5"],
+            [["yolov11n · 300 imágenes (mejor)", "0.891"],
+             ["yolov11n · 200 imágenes", "0.875"],
+             ["yolov5n · 300 imágenes", "0.851"],
+             ["yolov8n · 300 imágenes", "0.846"],
+             ["yolov5n · 100 imágenes (peor)", "0.637"]],
+            highlight_row=0),
+        *fig(root / "reports" / "tradeoff_experimentos.png",
+             "Más datos ayudan, con rendimientos decrecientes; yolov11n domina."),
+        h("Aplicación real"),
+        p("Demuestra dominio de los fundamentos (no solo llamar a una librería) y rigor "
+          "para comparar modelos: elegir arquitectura y tamaño de datos con criterio. La "
+          "parte desde cero sirve además para enseñar y entender la visión por computadora."),
+    ]
+    build_pdf(root / "reports" / "ficha_vision_fundamentos.pdf",
+              "Visión por Computadora — Fundamentos + Análisis de Experimentos",
+              "CV desde cero (numpy) + comparación de 9 entrenamientos YOLO reales",
+              body)
+
+
 if __name__ == "__main__":
-    for builder in (ficha_01, ficha_02, ficha_03, ficha_04, ficha_05,
-                    ficha_06, ficha_07, ficha_08, ficha_09, ficha_10):
+    for builder in (ficha_01, ficha_02, ficha_03, ficha_04, ficha_05, ficha_06,
+                    ficha_07, ficha_08, ficha_09, ficha_10, ficha_11):
         builder()
     print("\nFichas PDF generadas en <proyecto>/reports/")

@@ -34,6 +34,7 @@ reproducible results.*
 | 📉 [Monitor de precios](proyecto-08-price-monitor/) | Scraping configurable por YAML + historial + alertas Telegram + dashboard / *YAML-configurable scraping + history + Telegram alerts + dashboard* | BeautifulSoup, Plotly | Sitio nuevo = 8 líneas de YAML |
 | ⚽ [Demanda Mundial 2026](proyecto-09-mundial-demanda/) | Análisis SQL de demanda y pricing hotelero en las sedes del Mundial / *SQL analysis of World Cup hotel demand & pricing* | SQL, pandas, matplotlib | Día de partido +54% demanda, +9% precio → **+20% pricing** |
 | 📊 [Predicción de churn](proyecto-10-churn-prediction/) | Segmentos en SQL + modelo de retención de clientes / *SQL segments + customer retention model* | SQL, scikit-learn | ROC-AUC **0.773** · driver: contrato mes a mes |
+| 👁️ [Visión: fundamentos + experimentos](proyecto-11-vision-fundamentos/) | CV desde cero en numpy + análisis de 9 experimentos YOLO / *CV from scratch + 9 YOLO experiments* | numpy, pandas, matplotlib | Mejor: yolov11n 300img **mAP 0.891** |
 
 ## 🛠️ Tecnologías / Tech
 
