@@ -1,16 +1,16 @@
 # 🤖 Telegram Booking Agent for Small Businesses / Agente de Citas por Telegram
 
-> **EN** — A production-ready Telegram bot that answers customer questions and books
-> appointments for any small business — **zero cost**: free Telegram Bot API, SQLite,
+> **EN** — A robust, tested Telegram bot that answers customer questions and books
+> appointments for any small business — **no API costs**: free Telegram Bot API, SQLite,
 > fuzzy FAQ matching in pure Python, and an *optional* local LLM via Ollama. New client =
 > new YAML file, no code changes.
 >
-> **ES** — Bot de Telegram listo para producción que responde preguntas de clientes y
-> agenda citas para cualquier negocio pequeño — **costo cero**: Bot API gratuita de
+> **ES** — Bot de Telegram robusto y probado que responde preguntas de clientes y
+> agenda citas para cualquier negocio pequeño — **sin costos de API**: Bot API gratuita de
 > Telegram, SQLite, matching difuso de FAQ en Python puro y LLM local *opcional* vía
 > Ollama. Cliente nuevo = nuevo archivo YAML, sin tocar código.
 
-![Python](https://img.shields.io/badge/python-3.11-blue) ![Telegram](https://img.shields.io/badge/Telegram-Bot%20API-26A5E4) ![cost](https://img.shields.io/badge/costo-%240-brightgreen) ![tests](https://img.shields.io/badge/tests-11%20passing-brightgreen)
+![Python](https://img.shields.io/badge/python-3.11-blue) ![Telegram](https://img.shields.io/badge/Telegram-Bot%20API-26A5E4) ![tests](https://img.shields.io/badge/tests-11%20passing-brightgreen)
 
 ---
 
@@ -19,7 +19,7 @@
 ### El problema que resuelve
 
 Los negocios pequeños pierden clientes por no contestar a tiempo. WhatsApp Business API
-cobra por conversación; **Telegram es 100% gratis** y este bot hace el mismo trabajo:
+cobra por conversación; **la Bot API de Telegram es gratuita** y este bot hace el mismo trabajo:
 
 - 💬 **Responde preguntas frecuentes** (precios, ubicación, horarios) al instante,
   con matching difuso que tolera acentos, mayúsculas y mensajes cortos ("precio?").
@@ -29,7 +29,7 @@ cobra por conversación; **Telegram es 100% gratis** y este bot hace el mismo tr
 - 🧠 **Opcional**: si instalas [Ollama](https://ollama.com) (gratis, local), las
   preguntas fuera del FAQ las responde un LLM usando solo la información del negocio.
 
-### Instalación (5 minutos, $0)
+### Instalación
 
 ```bash
 pip install -r requirements.txt

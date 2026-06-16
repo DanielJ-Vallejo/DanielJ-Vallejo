@@ -3,15 +3,15 @@
 > **EN** — Turn a folder of Mexican electronic invoices (CFDI 3.3/4.0 XML) into a clean
 > Excel in seconds: UUID, RFCs, dates, totals. Stdlib XML parsing (exact, not OCR
 > guessing), drag-and-drop web UI with Streamlit, optional Tesseract OCR for scanned
-> invoices. 100% free and offline — your fiscal data never leaves your machine.
+> invoices. Fully local and offline — your fiscal data never leaves your machine.
 >
 > **ES** — Convierte una carpeta de facturas electrónicas mexicanas (CFDI 3.3/4.0 XML)
 > en un Excel limpio en segundos: UUID, RFCs, fechas, totales. Parsing exacto del XML
 > con la librería estándar (no adivina con OCR), interfaz web de arrastrar y soltar con
-> Streamlit y OCR opcional con Tesseract para facturas escaneadas. 100% gratis y
-> offline — tus datos fiscales nunca salen de tu máquina.
+> Streamlit y OCR opcional con Tesseract para facturas escaneadas. Totalmente local
+> y offline — tus datos fiscales nunca salen de tu máquina.
 
-![Python](https://img.shields.io/badge/python-3.11-blue) ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B) ![cost](https://img.shields.io/badge/costo-%240-brightgreen) ![tests](https://img.shields.io/badge/tests-8%20passing-brightgreen)
+![Python](https://img.shields.io/badge/python-3.11-blue) ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B) ![tests](https://img.shields.io/badge/tests-8%20passing-brightgreen)
 
 ---
 

@@ -12,7 +12,7 @@ from pathlib import Path
 from ultralytics import YOLO
 import cv2
 
-BASE      = Path(r".\Proyecto final")
+BASE      = Path("data/proyecto-final")  # ruta local de los datos (ajústala)
 DATASET   = BASE / "dataset_yolo"
 RUNS      = BASE / "runs"
 REPORTES  = BASE / "reportes"

@@ -23,7 +23,7 @@ from ultralytics import YOLO
 
 random.seed(42)
 
-BASE = Path(r".\Proyecto final")
+BASE = Path("data/proyecto-final")  # ruta local de los datos (ajústala en tu máquina)
 DATASET = BASE / "dataset_yolo"
 RUNS = BASE / "runs"
 RESULTS_FILE = BASE / "reportes" / "tablas" / "resultados_9_modelos.json"

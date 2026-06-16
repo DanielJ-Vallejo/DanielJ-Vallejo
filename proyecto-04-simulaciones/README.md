@@ -14,37 +14,6 @@
 
 ---
 
-## 🇬🇧 English
-
-### What's inside
-
-| Module | Physics | Validation |
-|---|---|---|
-| `ising2d.py` | Phase transition on the square lattice, Metropolis with simultaneous checkerboard sublattice updates | Onsager's exact Tc = 2/ln(1+√2) ≈ 2.269 visible in χ and C_V peaks |
-| `ising3d.py` | Cubic lattice, no exact solution | Numerical Tc ≈ 4.5115 reproduced by susceptibility peak |
-| `langevin.py` | Euler-Maruyama integration of overdamped Brownian motion | Var[x(t)] = 2Dt — fitted slope 2.014 vs exact 2.0 |
-| `random_walk.py` | 1D/2D lattice walks | Diffusive scaling ⟨x²⟩ = N |
-| `stats.py` | Jackknife + blocked jackknife error estimation | Matches σ²/n on i.i.d. data to 1e-6 |
-
-### Highlights
-
-- **Pure NumPy checkerboard updates**: both Ising models update half the lattice per
-  vectorized operation — no compiled extensions needed, full 2D scan (3 sizes × 21
-  temperatures) in seconds.
-- **Honest error bars**: Monte Carlo samples are autocorrelated, so naive standard
-  errors are biased; the blocked jackknife handles this correctly.
-- **Physics-based tests**: ferromagnetic ordering at low T, paramagnetic disorder at
-  high T, exact diffusion law, energy bounds — 9 assertions a wrong implementation
-  cannot pass.
-
-```bash
-pip install -r requirements.txt
-python scripts/run_all.py          # all figures (~30 s)
-pytest tests/ -q
-```
-
----
-
 ## 🇪🇸 Español
 
 ### Contenido
@@ -73,3 +42,34 @@ pytest tests/ -q
 `ising2d_observables.png` · `ising2d_jackknife.png` · `ising3d_observables.png` ·
 `ising3d_configs.png` · `langevin_histograms.png` · `langevin_variance.png` ·
 `random_walk_1d.png` · `random_walk_2d.png`
+
+---
+
+## 🇬🇧 English
+
+### What's inside
+
+| Module | Physics | Validation |
+|---|---|---|
+| `ising2d.py` | Phase transition on the square lattice, Metropolis with simultaneous checkerboard sublattice updates | Onsager's exact Tc = 2/ln(1+√2) ≈ 2.269 visible in χ and C_V peaks |
+| `ising3d.py` | Cubic lattice, no exact solution | Numerical Tc ≈ 4.5115 reproduced by susceptibility peak |
+| `langevin.py` | Euler-Maruyama integration of overdamped Brownian motion | Var[x(t)] = 2Dt — fitted slope 2.014 vs exact 2.0 |
+| `random_walk.py` | 1D/2D lattice walks | Diffusive scaling ⟨x²⟩ = N |
+| `stats.py` | Jackknife + blocked jackknife error estimation | Matches σ²/n on i.i.d. data to 1e-6 |
+
+### Highlights
+
+- **Pure NumPy checkerboard updates**: both Ising models update half the lattice per
+  vectorized operation — no compiled extensions needed, full 2D scan (3 sizes × 21
+  temperatures) in seconds.
+- **Honest error bars**: Monte Carlo samples are autocorrelated, so naive standard
+  errors are biased; the blocked jackknife handles this correctly.
+- **Physics-based tests**: ferromagnetic ordering at low T, paramagnetic disorder at
+  high T, exact diffusion law, energy bounds — 9 assertions a wrong implementation
+  cannot pass.
+
+```bash
+pip install -r requirements.txt
+python scripts/run_all.py          # all figures (~30 s)
+pytest tests/ -q
+```

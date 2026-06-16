@@ -15,6 +15,34 @@
 
 ---
 
+## 🇪🇸 Español
+
+### Motivación
+
+Cerca de **2.4 millones de personas en México** tienen discapacidad auditiva y usan LSM.
+A diferencia del lenguaje de señas americano, los datasets de LSM son escasos — un
+sistema realista debe aprender con muy pocos ejemplos. Este proyecto mide directamente el
+compromiso datos/desempeño.
+
+### Diseño experimental
+
+- **Dataset**: ~500 imágenes de vocales de LSM (A, E, I, O, U) — datos de Roboflow LSM
+  más imágenes propias, anotadas en formato YOLO.
+- **Malla**: {YOLOv5n, YOLOv8n, YOLOv11n} × {100, 200, 300 imágenes de entrenamiento},
+  hiperparámetros idénticos, validación fija → **9 corridas**.
+- **Rebalanceo de clases (reweighting)** para compensar la frecuencia desigual de vocales.
+
+### Hallazgos clave
+
+- Triplicar los datos (100 → 300 imágenes) sube el mAP@0.5 **+0.26 en promedio** — en
+  este régimen los datos le ganan a la arquitectura: la brecha entre la peor y la mejor
+  *arquitectura* con 300 imágenes (0.05) es cinco veces menor que la brecha por *cantidad
+  de datos*.
+- YOLOv8n logra el mejor balance recall/mAP (mAP@0.5 = **0.853**) — preferible cuando
+  perder una seña cuesta más que un falso positivo (contexto de tecnología asistiva).
+
+---
+
 ## 🇬🇧 English
 
 ### Motivation
@@ -57,31 +85,3 @@ proyecto-05-lsm-vision/
 ```
 
 > Dataset images are not redistributed (Roboflow license + personal images).
-
----
-
-## 🇪🇸 Español
-
-### Motivación
-
-Cerca de **2.4 millones de personas en México** tienen discapacidad auditiva y usan LSM.
-A diferencia del lenguaje de señas americano, los datasets de LSM son escasos — un
-sistema realista debe aprender con muy pocos ejemplos. Este proyecto mide directamente el
-compromiso datos/desempeño.
-
-### Diseño experimental
-
-- **Dataset**: ~500 imágenes de vocales de LSM (A, E, I, O, U) — datos de Roboflow LSM
-  más imágenes propias, anotadas en formato YOLO.
-- **Malla**: {YOLOv5n, YOLOv8n, YOLOv11n} × {100, 200, 300 imágenes de entrenamiento},
-  hiperparámetros idénticos, validación fija → **9 corridas**.
-- **Rebalanceo de clases (reweighting)** para compensar la frecuencia desigual de vocales.
-
-### Hallazgos clave
-
-- Triplicar los datos (100 → 300 imágenes) sube el mAP@0.5 **+0.26 en promedio** — en
-  este régimen los datos le ganan a la arquitectura: la brecha entre la peor y la mejor
-  *arquitectura* con 300 imágenes (0.05) es cinco veces menor que la brecha por *cantidad
-  de datos*.
-- YOLOv8n logra el mejor balance recall/mAP (mAP@0.5 = **0.853**) — preferible cuando
-  perder una seña cuesta más que un falso positivo (contexto de tecnología asistiva).

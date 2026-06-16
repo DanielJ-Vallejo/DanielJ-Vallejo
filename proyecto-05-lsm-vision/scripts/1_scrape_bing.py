@@ -6,7 +6,7 @@ Usa icrawler para descargar de Bing Images.
 from pathlib import Path
 from icrawler.builtin import BingImageCrawler
 
-BASE = Path(r".\Proyecto final")
+BASE = Path("data/proyecto-final")  # ruta local de los datos (ajústala en tu máquina)
 OUT = BASE / "scraped"
 OUT.mkdir(parents=True, exist_ok=True)
 

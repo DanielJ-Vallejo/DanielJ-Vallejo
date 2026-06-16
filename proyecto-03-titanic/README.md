@@ -12,44 +12,6 @@
 
 ---
 
-## 🇬🇧 English
-
-### Why another Titanic project?
-
-Because most of them leak data. The point here is engineering discipline:
-
-- **Every learned statistic lives inside the pipeline.** Imputation medians, scaler
-  parameters and one-hot categories are fit per CV fold via `ColumnTransformer` —
-  the test fold never influences preprocessing.
-- **Row-wise feature engineering** (`Title` extracted from names and grouped into 6
-  social categories, `FamilySize`, `IsAlone`, `Deck` from cabin codes) is applied before
-  the split because it learns nothing from data — and that distinction is documented.
-- **Unseen categories don't crash production**: `OneHotEncoder(handle_unknown="ignore")`,
-  covered by a unit test.
-
-### Results (891 passengers, 38.4% survival)
-
-5-fold cross-validation on the 80% training partition:
-
-| Model | CV Accuracy | CV ROC-AUC | CV F1 |
-|---|---|---|---|
-| Logistic regression | 0.819 ± 0.024 | 0.866 | 0.761 |
-| Random forest | 0.823 ± 0.030 | 0.871 | 0.750 |
-| **Gradient boosting** | 0.822 ± 0.035 | **0.876** | 0.755 |
-
-Holdout (20%, never touched during model selection): **accuracy 0.804, ROC-AUC 0.839,
-F1 0.733** — consistent with CV, i.e. no optimistic bias.
-
-### Quickstart
-
-```bash
-pip install -r requirements.txt
-python scripts/run_pipeline.py   # downloads data on first run
-pytest tests/ -q
-```
-
----
-
 ## 🇪🇸 Español
 
 ### ¿Por qué otro proyecto del Titanic?
@@ -86,4 +48,42 @@ proyecto-03-titanic/
 ├── scripts/run_pipeline.py
 ├── tests/                 # 5 tests (títulos, familia, NaNs, categorías nuevas)
 └── reports/               # metrics.json + matriz de confusión + importancias
+```
+
+---
+
+## 🇬🇧 English
+
+### Why another Titanic project?
+
+Because most of them leak data. The point here is engineering discipline:
+
+- **Every learned statistic lives inside the pipeline.** Imputation medians, scaler
+  parameters and one-hot categories are fit per CV fold via `ColumnTransformer` —
+  the test fold never influences preprocessing.
+- **Row-wise feature engineering** (`Title` extracted from names and grouped into 6
+  social categories, `FamilySize`, `IsAlone`, `Deck` from cabin codes) is applied before
+  the split because it learns nothing from data — and that distinction is documented.
+- **Unseen categories don't crash production**: `OneHotEncoder(handle_unknown="ignore")`,
+  covered by a unit test.
+
+### Results (891 passengers, 38.4% survival)
+
+5-fold cross-validation on the 80% training partition:
+
+| Model | CV Accuracy | CV ROC-AUC | CV F1 |
+|---|---|---|---|
+| Logistic regression | 0.819 ± 0.024 | 0.866 | 0.761 |
+| Random forest | 0.823 ± 0.030 | 0.871 | 0.750 |
+| **Gradient boosting** | 0.822 ± 0.035 | **0.876** | 0.755 |
+
+Holdout (20%, never touched during model selection): **accuracy 0.804, ROC-AUC 0.839,
+F1 0.733** — consistent with CV, i.e. no optimistic bias.
+
+### Quickstart
+
+```bash
+pip install -r requirements.txt
+python scripts/run_pipeline.py   # downloads data on first run
+pytest tests/ -q
 ```

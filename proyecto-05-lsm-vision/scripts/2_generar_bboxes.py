@@ -15,8 +15,8 @@ from tqdm import tqdm
 random.seed(42)
 
 # Paths
-BASE = Path(r".\Proyecto final")
-SRC_LSM = Path(r".\LSM ALL")
+BASE = Path("data/proyecto-final")  # ruta local de los datos (ajústala)
+SRC_LSM = Path("data/LSM-ALL")      # ruta local del dataset LSM (ajústala)
 OUT = BASE / "dataset_yolo"
 
 # Clases

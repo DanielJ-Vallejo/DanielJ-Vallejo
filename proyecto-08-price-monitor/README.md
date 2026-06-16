@@ -2,15 +2,15 @@
 
 > **EN** — Web scraping productized: a YAML file describes any store's listing page,
 > the monitor scrapes it on a schedule, stores price history in SQLite, detects drops
-> and sends **free Telegram alerts**. Interactive Plotly dashboard included. Adapting it
+> and sends **Telegram alerts**. Interactive Plotly dashboard included. Adapting it
 > to a new site means writing 8 lines of YAML, not code.
 >
 > **ES** — Web scraping convertido en producto: un archivo YAML describe la página de
 > cualquier tienda, el monitor la scrapea con horario, guarda el historial de precios en
-> SQLite, detecta bajadas y manda **alertas gratis por Telegram**. Incluye dashboard
+> SQLite, detecta bajadas y manda **alertas por Telegram**. Incluye dashboard
 > interactivo con Plotly. Adaptarlo a un sitio nuevo son 8 líneas de YAML, no código.
 
-![Python](https://img.shields.io/badge/python-3.11-blue) ![scraping](https://img.shields.io/badge/scraping-BeautifulSoup-green) ![cost](https://img.shields.io/badge/costo-%240-brightgreen) ![tests](https://img.shields.io/badge/tests-8%20passing-brightgreen)
+![Python](https://img.shields.io/badge/python-3.11-blue) ![scraping](https://img.shields.io/badge/scraping-BeautifulSoup-green) ![tests](https://img.shields.io/badge/tests-8%20passing-brightgreen)
 
 ---
 
@@ -36,7 +36,7 @@ python scripts/run_monitor.py            # scrapea el sitio demo y guarda snapsh
 streamlit run app/streamlit_app.py       # dashboard con historial y export CSV
 ```
 
-Prográmalo gratis con el **Programador de tareas** de Windows o `cron` en Linux para
+Prográmalo con el **Programador de tareas** de Windows o `cron` en Linux para
 construir historial. Con `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` definidos
 (bot gratuito de @BotFather), las bajadas ≥5% llegan solas a tu Telegram.
 
