@@ -59,6 +59,16 @@ const I18N = {
       "Productized scraping: one YAML describes any store, the monitor stores history " +
       "in SQLite, detects drops and sends free Telegram alerts. Interactive Plotly " +
       "dashboard with CSV export.",
+    tag_data: "Data / SQL",
+    p9_title: "Demand & Pricing — World Cup 2026",
+    p9_desc:
+      "End-to-end SQL analysis: hotel occupancy and pricing in the World Cup host " +
+      "cities. Match day = 93% occupancy but price only +9% → a pricing recommendation " +
+      "(+20%, ~$5.2M MXN). Dashboard and figures.",
+    p10_title: "Customer Churn Prediction",
+    p10_desc:
+      "From SQL segments to an ML model (ROC-AUC 0.773) whose coefficients are the " +
+      "churn drivers, plus a quantified retention recommendation. Interactive dashboard.",
     view_code: "View code →",
     sk_lang: "Languages",
     sk_tools: "Tools",
@@ -131,6 +141,16 @@ const I18N = {
       "Scraping productizado: un YAML describe cualquier tienda, el monitor guarda " +
       "historial en SQLite, detecta bajadas y avisa gratis por Telegram. Dashboard " +
       "interactivo con Plotly y export a CSV.",
+    tag_data: "Datos / SQL",
+    p9_title: "Demanda y Pricing — Mundial 2026",
+    p9_desc:
+      "Análisis end-to-end con SQL: ocupación y precios de hoteles en las sedes del " +
+      "Mundial. Día de partido = 93% de ocupación pero precio solo +9% → recomendación " +
+      "de pricing (+20%, ~$5.2M MXN). Dashboard y figuras.",
+    p10_title: "Predicción de Churn de Clientes",
+    p10_desc:
+      "De segmentos en SQL a un modelo de ML (ROC-AUC 0.773) cuyos coeficientes son los " +
+      "drivers del abandono, y una recomendación de retención cuantificada. Dashboard interactivo.",
     view_code: "Ver código →",
     sk_lang: "Lenguajes",
     sk_tools: "Herramientas",

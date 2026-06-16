@@ -20,6 +20,8 @@ jobs:
           - proyecto-06-telegram-agent
           - proyecto-07-facturas-cfdi
           - proyecto-08-price-monitor
+          - proyecto-09-mundial-demanda
+          - proyecto-10-churn-prediction
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

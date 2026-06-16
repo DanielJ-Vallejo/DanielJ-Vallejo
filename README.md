@@ -32,6 +32,8 @@ reproducible results.*
 | 🤖 [Agente de Telegram](proyecto-06-telegram-agent/) | Bot de citas y FAQ para negocios, costo $0, cliente nuevo = un YAML / *Booking & FAQ bot for businesses, $0 cost, new client = one YAML* | Telegram Bot API, SQLite | 11 tests · LLM local opcional |
 | 🧾 [Extractor de facturas CFDI](proyecto-07-facturas-cfdi/) | Facturas mexicanas XML → Excel con app web de arrastrar y soltar / *Mexican e-invoices XML → Excel with drag-and-drop web app* | Streamlit, stdlib XML | CFDI 3.3 y 4.0 · OCR opcional |
 | 📉 [Monitor de precios](proyecto-08-price-monitor/) | Scraping configurable por YAML + historial + alertas Telegram + dashboard / *YAML-configurable scraping + history + Telegram alerts + dashboard* | BeautifulSoup, Plotly | Sitio nuevo = 8 líneas de YAML |
+| ⚽ [Demanda Mundial 2026](proyecto-09-mundial-demanda/) | Análisis SQL de demanda y pricing hotelero en las sedes del Mundial / *SQL analysis of World Cup hotel demand & pricing* | SQL, pandas, matplotlib | Día de partido +54% demanda, +9% precio → **+20% pricing** |
+| 📊 [Predicción de churn](proyecto-10-churn-prediction/) | Segmentos en SQL + modelo de retención de clientes / *SQL segments + customer retention model* | SQL, scikit-learn | ROC-AUC **0.773** · driver: contrato mes a mes |
 
 ## 🛠️ Tecnologías / Tech
 

@@ -484,8 +484,77 @@ def ficha_08() -> None:
               body)
 
 
+# --------------------------------------------------------------------------
+# Proyecto 09 — Demanda Mundial 2026
+# --------------------------------------------------------------------------
+def ficha_09() -> None:
+    root = REPO / "proyecto-09-mundial-demanda"
+    body = [
+        h("Resumen"),
+        p("Análisis de datos de extremo a extremo: de una pregunta de negocio a una "
+          "recomendación, usando <b>SQL</b>. Modela la ocupación y los precios de "
+          "hoteles en las sedes mexicanas del Mundial 2026 (CDMX, Guadalajara, "
+          "Monterrey) sobre SQLite, con consultas de negocio (JOIN, LEFT JOIN, "
+          "GROUP BY) y una capa de presentación en pandas + matplotlib."),
+        h("Resultados"),
+        metrics_table(
+            ["Indicador", "Valor"],
+            [["Ocupación en día de partido", "92.9% (vs 60.3% normal, +54%)"],
+             ["Alza de precio en día de partido", "+9% (la demanda no se refleja en el precio)"],
+             ["Recomendación de pricing", "+20% en días de partido"],
+             ["Ingreso adicional estimado", "~$5.2 M MXN"],
+             ["Pruebas automatizadas", "6/6 pasando"]],
+            highlight_row=2),
+        *fig(root / "reports" / "partido_vs_normal.png",
+             "Día de partido vs día normal: la demanda salta, el precio no."),
+        h("Aplicación real"),
+        p("Hoteles, plataformas de renta y comercios de las sedes ajustando precios a "
+          "la demanda del evento. El mismo enfoque (SQL para consultar, pandas y "
+          "matplotlib para presentar) sirve para cualquier análisis de demanda y "
+          "pricing estacional."),
+    ]
+    build_pdf(root / "reports" / "ficha_mundial_demanda.pdf",
+              "Demanda y Pricing Hotelero — Mundial 2026",
+              "Análisis de datos end-to-end con SQL  ·  SQLite, pandas, matplotlib, Streamlit",
+              body)
+
+
+# --------------------------------------------------------------------------
+# Proyecto 10 — Predicción de churn
+# --------------------------------------------------------------------------
+def ficha_10() -> None:
+    root = REPO / "proyecto-10-churn-prediction"
+    body = [
+        h("Resumen"),
+        p("Predicción de abandono de clientes (churn) de extremo a extremo: perfila el "
+          "churn por segmento en <b>SQL</b> (GROUP BY, CASE WHEN) y entrena una "
+          "regresión logística interpretable cuyos coeficientes son los <i>drivers</i> "
+          "del abandono, traduciéndolo en una recomendación de retención con valor."),
+        h("Resultados"),
+        metrics_table(
+            ["Indicador", "Valor"],
+            [["ROC-AUC del modelo (prueba)", "0.773"],
+             ["Churn — contrato mes a mes", "47.5% (vs ~16% anual/bianual)"],
+             ["Segmento de mayor riesgo", "mes a mes + 3+ llamadas: 58% churn"],
+             ["Recomendación", "campaña de retención al segmento de riesgo"],
+             ["Rescate estimado", "~$33 K MXN/mes de ingreso recurrente"],
+             ["Pruebas automatizadas", "6/6 pasando"]],
+            highlight_row=0),
+        *fig(root / "reports" / "churn_drivers.png",
+             "Drivers del churn: contrato y antigüedad bajan el riesgo; soporte lo sube."),
+        h("Aplicación real"),
+        p("Cualquier negocio por suscripción (telecom, SaaS, gimnasios, streaming) que "
+          "quiera saber QUÉ clientes va a perder y, sobre todo, QUÉ hacer: priorizar la "
+          "retención donde más vale, que es mucho más barato que adquirir nuevos."),
+    ]
+    build_pdf(root / "reports" / "ficha_churn_prediction.pdf",
+              "Predicción de Churn de Clientes",
+              "SQL + Machine Learning + recomendación de retención  ·  scikit-learn, pandas",
+              body)
+
+
 if __name__ == "__main__":
-    for builder in (ficha_01, ficha_02, ficha_03, ficha_04,
-                    ficha_05, ficha_06, ficha_07, ficha_08):
+    for builder in (ficha_01, ficha_02, ficha_03, ficha_04, ficha_05,
+                    ficha_06, ficha_07, ficha_08, ficha_09, ficha_10):
         builder()
     print("\nFichas PDF generadas en <proyecto>/reports/")
