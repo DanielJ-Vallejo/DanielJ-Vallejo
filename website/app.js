@@ -74,6 +74,11 @@ const I18N = {
       "Core CV operations from scratch in numpy (convolution, Sobel, object counting) " +
       "plus a comparative analysis of 9 real YOLO experiments (architecture × data). " +
       "Best: yolov11n 300img, mAP 0.891.",
+    p12_title: "People Tracking",
+    p12_desc:
+      "Multi-object tracking: YOLO detects and a tracker assigns stable IDs by combining " +
+      "IoU and appearance (HSV) with the Hungarian algorithm. Tracking logic is decoupled " +
+      "from the camera and unit-tested.",
     view_code: "View code →",
     sk_lang: "Languages",
     sk_tools: "Tools",
@@ -161,6 +166,11 @@ const I18N = {
       "Las operaciones base de CV desde cero en numpy (convolución, Sobel, conteo de " +
       "objetos) + análisis comparativo de 9 experimentos YOLO reales (arquitectura × " +
       "datos). Mejor: yolov11n 300img, mAP 0.891.",
+    p12_title: "Seguimiento de Personas (Tracking)",
+    p12_desc:
+      "Tracking multi-objeto: YOLO detecta y un tracker asigna IDs estables combinando " +
+      "IoU y apariencia (HSV) con el algoritmo Húngaro. La lógica va desacoplada de la " +
+      "cámara y probada con tests.",
     view_code: "Ver código →",
     sk_lang: "Lenguajes",
     sk_tools: "Herramientas",

@@ -1,0 +1,6 @@
+# Núcleo reproducible (utilidades + pruebas)
+numpy>=1.26
+pytest>=8.0
+
+# Para reentrenar/scrapear (scripts/) — pesado, instalar aparte:
+#   pip install ultralytics opencv-python requests beautifulsoup4

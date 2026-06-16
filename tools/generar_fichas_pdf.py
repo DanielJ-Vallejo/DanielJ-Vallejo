@@ -587,8 +587,39 @@ def ficha_11() -> None:
               body)
 
 
+# --------------------------------------------------------------------------
+# Proyecto 12 — Seguimiento de personas
+# --------------------------------------------------------------------------
+def ficha_12() -> None:
+    root = REPO / "proyecto-12-people-tracking"
+    body = [
+        h("Resumen"),
+        p("Sistema de <b>seguimiento multi-objeto</b> de personas: YOLO detecta en cada "
+          "frame y un tracker asigna un <b>ID estable</b> combinando solapamiento "
+          "espacial (IoU) y similitud de apariencia (histograma HSV), con asignación "
+          "óptima por <b>algoritmo Húngaro</b> (SciPy). La lógica de tracking está "
+          "desacoplada de la cámara para poder probarse de forma automática."),
+        h("Diseño y resultados"),
+        metrics_table(
+            ["Aspecto", "Detalle"],
+            [["Detección", "YOLOv8 (clase persona)"],
+             ["Asociación", "IoU + coseno sobre histograma HSV; score max(blend, similitud)"],
+             ["Asignación óptima", "algoritmo Húngaro (scipy linear_sum_assignment)"],
+             ["Robustez a cortes de escena", "el match por apariencia conserva el ID si el IoU cae a 0"],
+             ["Pruebas automatizadas", "6/6 (IoU, similitud, IDs estables, ciclo de vida)"]]),
+        h("Aplicación real"),
+        p("Conteo de personas, analítica de aforo/flujo en tiendas o eventos, y "
+          "videovigilancia. Separar la lógica (probada, sin cámara) de la app de video "
+          "(YOLO + OpenCV) la hace mantenible y confiable."),
+    ]
+    build_pdf(root / "reports" / "ficha_people_tracking.pdf",
+              "Seguimiento de Personas — Tracking Multi-objeto",
+              "YOLO + IoU + apariencia HSV + algoritmo Húngaro  ·  lógica desacoplada y probada",
+              body)
+
+
 if __name__ == "__main__":
     for builder in (ficha_01, ficha_02, ficha_03, ficha_04, ficha_05, ficha_06,
-                    ficha_07, ficha_08, ficha_09, ficha_10, ficha_11):
+                    ficha_07, ficha_08, ficha_09, ficha_10, ficha_11, ficha_12):
         builder()
     print("\nFichas PDF generadas en <proyecto>/reports/")

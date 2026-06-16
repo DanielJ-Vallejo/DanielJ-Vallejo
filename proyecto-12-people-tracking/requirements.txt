@@ -1,0 +1,4 @@
+# Núcleo de tracking (lógica + pruebas) — ligero, sin OpenCV/YOLO
+numpy>=1.26
+scipy>=1.11
+pytest>=8.0

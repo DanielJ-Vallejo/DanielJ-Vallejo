@@ -21,8 +21,10 @@ jobs:
           - proyecto-07-facturas-cfdi
           - proyecto-08-price-monitor
           - proyecto-09-mundial-demanda
+          - proyecto-05-lsm-vision
           - proyecto-10-churn-prediction
           - proyecto-11-vision-fundamentos
+          - proyecto-12-people-tracking
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
