@@ -1,6 +1,7 @@
 pandas>=2.2
 openpyxl>=3.1
 streamlit>=1.35
+defusedxml>=0.7
 pytest>=8.0
 
 # Optional OCR for scanned invoices (also needs the free Tesseract binary):

@@ -35,7 +35,7 @@ jobs:
         # Heavy training deps (torch/transformers) are not needed for tests
         run: >
           pip install numpy pandas scikit-learn matplotlib joblib openpyxl
-          pytest python-telegram-bot PyYAML beautifulsoup4 requests
+          pytest python-telegram-bot PyYAML beautifulsoup4 requests defusedxml
       - name: Run tests
         run: pytest ${{ matrix.project }}/tests -q
 

@@ -7,7 +7,7 @@ it directly is exact, unlike OCR on the PDF representation.
 
 from __future__ import annotations
 
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET  # protege el XML subido (XXE / bombas de entidades)
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
