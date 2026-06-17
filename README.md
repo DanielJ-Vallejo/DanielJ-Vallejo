@@ -7,7 +7,7 @@
 Físico en formación (UNAM) construyendo sistemas de ML de extremo a extremo
 / *Physicist in training (UNAM) building end-to-end ML systems*
 
-[🌐 Portfolio Web](https://danielj-vallejo.github.io/DanielJ-Vallejo/) ·
+[🌐 Portfolio Web](https://github.com/DanielJ-Vallejo/DanielJ-Vallejo/) ·
 [💼 LinkedIn](https://www.linkedin.com/in/daniel-jiménez-vallejo) ·
 [✉️ daniel20615@gmail.com](mailto:daniel20615@gmail.com)
 
