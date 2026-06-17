@@ -1,0 +1,9 @@
+# Dependencias de ENTRENAMIENTO (opcionales) — máquina con GPU / Colab.
+# No se necesitan para los tests ni para inferencia con el modelo ya entrenado;
+# por eso viven fuera de requirements.txt (y fuera del escaneo de seguridad de CI).
+#   pip install -r requirements-train.txt
+torch>=2.2
+transformers>=4.40
+datasets>=2.19
+accelerate>=0.29
+sentencepiece>=0.2

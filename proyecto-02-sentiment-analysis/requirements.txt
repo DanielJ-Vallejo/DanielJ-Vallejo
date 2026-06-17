@@ -1,13 +1,8 @@
-# Core (data preparation + tests)
+# Núcleo: preparación de datos + tests (ligero, sin GPU).
+# Las dependencias de entrenamiento (torch, transformers, ...) son opcionales y
+# viven en requirements-train.txt — solo se necesitan para reentrenar el modelo.
 numpy>=1.26
 pandas>=2.2
 scikit-learn>=1.4
 openpyxl>=3.1
 pytest>=8.0
-
-# Training (GPU machine / Colab)
-torch>=2.2
-transformers>=4.40
-datasets>=2.19
-accelerate>=0.29
-sentencepiece>=0.2

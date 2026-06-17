@@ -73,7 +73,8 @@ reviews mix dialects and code-switching.
 ### Reproduce
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt            # core: data prep + tests (no GPU)
+pip install -r requirements-train.txt      # training deps (torch, transformers) — GPU/Colab
 # place MeIA_2025_train.xlsx / MeIA_2025_test_wo_labels.xlsx in ../data/raw/sentiment-analysis/
 python scripts/train_meia.py        # needs GPU (or run the notebook in Colab)
 pytest tests/ -q                    # data-prep tests, no GPU needed
