@@ -1,0 +1,14 @@
+# Configuración de tooling para el monorepo de portafolio.
+# Cada `proyecto-NN/` es un proyecto autocontenido; este archivo centraliza la
+# configuración de linting/formato para que todos se revisen igual.
+#
+# Tooling configuration for the portfolio monorepo. Each `proyecto-NN/` is a
+# self-contained project; this file centralises lint/format config so every
+# project is checked consistently.
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "double"
