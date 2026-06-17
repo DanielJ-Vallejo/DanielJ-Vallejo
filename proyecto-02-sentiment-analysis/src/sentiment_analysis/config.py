@@ -16,6 +16,9 @@ class TrainingConfig:
     """Hyperparameters used for the final MeIA 2025 submission."""
 
     model_name: str = "dccuchile/bert-base-spanish-wwm-uncased"  # BETO
+    # Revisión fijada del modelo: reproducibilidad + seguridad de cadena de
+    # suministro (evita descargar pesos alterados; ver bandit B615 / CWE-494).
+    model_revision: str = "d1c9c4565c9d6731e57ed7f027b802697bad861e"
     num_labels: int = 5
     max_length: int = 256
     batch_size: int = 16

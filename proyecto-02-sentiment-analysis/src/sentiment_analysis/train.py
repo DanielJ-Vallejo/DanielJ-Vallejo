@@ -48,7 +48,7 @@ def train(
         random_state=cfg.random_state,
     )
 
-    tokenizer = AutoTokenizer.from_pretrained(cfg.model_name)
+    tokenizer = AutoTokenizer.from_pretrained(cfg.model_name, revision=cfg.model_revision)
 
     def tokenize(batch):
         return tokenizer(
@@ -67,6 +67,7 @@ def train(
 
     model = AutoModelForSequenceClassification.from_pretrained(
         cfg.model_name,
+        revision=cfg.model_revision,
         num_labels=cfg.num_labels,
         hidden_dropout_prob=cfg.hidden_dropout,
         attention_probs_dropout_prob=cfg.attention_dropout,
@@ -130,7 +131,7 @@ def predict(trainer, texts: list[str], cfg: TrainingConfig | None = None) -> lis
     from transformers import AutoTokenizer
 
     cfg = cfg or TrainingConfig()
-    tokenizer = AutoTokenizer.from_pretrained(cfg.model_name)
+    tokenizer = AutoTokenizer.from_pretrained(cfg.model_name, revision=cfg.model_revision)
     ds = Dataset.from_dict({"text": texts}).map(
         lambda b: tokenizer(
             b["text"], padding="max_length", truncation=True, max_length=cfg.max_length
