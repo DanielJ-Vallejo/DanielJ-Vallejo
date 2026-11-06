@@ -61,7 +61,7 @@ reproducible results.*
 ## 🌱 Intereses / Interests
 
 Inteligencia artificial (ML/DL) · cómputo científico · física computacional ·
-cognición cuántica · sistemas multi-agente
+Robótica Humanoide · sistemas multi-agente
 
 ---
 
